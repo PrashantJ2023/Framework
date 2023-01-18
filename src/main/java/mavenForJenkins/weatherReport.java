@@ -13,8 +13,8 @@ public class weatherReport {
     @Test
 	public void getWeatherreport() throws Exception { 
 	
-	System.setProperty("webdriver.edge.driver", "./Driver/msedgedriver.exe");
-	WebDriver driver =(WebDriver) new EdgeDriver();
+	System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+	WebDriver driver =(WebDriver) new ChromeDriver();
 	driver.get("https://www.tomorrow.io/weather/");
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
